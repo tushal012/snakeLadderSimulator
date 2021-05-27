@@ -9,6 +9,10 @@ public class SnakeLadder {
 
         int startPostion=0;
 
+        int dieRolls = (int) (Math.random()*6)+1;
+
+        System.out.println(dieRolls);
+
     }
 }
 
