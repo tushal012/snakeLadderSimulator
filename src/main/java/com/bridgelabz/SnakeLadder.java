@@ -13,11 +13,13 @@ public class SnakeLadder {
         int position = 0;
         int newPosition = 0;
         int winPosition = 100;
+        int count=0;
 
         while (position<winPosition) {
             int dieRolls = (int) (Math.random() * 6) + 1;
             int checkOption = (int) (Math.random() * 3);
 
+            count++;
             switch (checkOption) {
                 case NO_PLAY:
                     newPosition = 0;
@@ -40,6 +42,7 @@ public class SnakeLadder {
             System.out.println("your are now at "+position+"th"+" position");
 
         }
+        System.out.println("\nCongratulation you are win! \n after die rolled "+ count+" times.");
     }
 }
 
